@@ -13,9 +13,11 @@ def test_minus_10_equal_minus_10():
 def test_number_10_not_equals_string_10():
     assert equal(10, "10") == False
 
-# first number second string
-# first string second number
-# both string
-# None and number
-# number and None
-# both None
+def test_string_10_not_equals_number_10():
+    assert equal("10",10) == False
+
+def test__not_equals_number_10():
+    assert equal("10",10) == False
+
+def test__both_none():
+    assert equal(None, None) == True
